@@ -1,17 +1,17 @@
 /* Presentation layer for the interactive Strategy Brief. Keeps the rule-based logic unchanged. */
 .reveal{position:relative}
-.reveal::before{content:"YOUR INPUT  →  STRATEGIC INTERPRETATION  →  CORE MESSAGE  →  MARKETING / PR / SALES  →  NEXT ACTION";display:block;padding:1.1rem max(5vw,calc((100vw - 1440px)/2));background:var(--acid);color:var(--ink);border-bottom:1px solid var(--ink);font-size:.68rem;font-weight:700;letter-spacing:.12em;line-height:1.5;text-transform:uppercase;position:sticky;top:0;z-index:10}
+.reveal::before{content:"YOUR INPUT  →  STRATEGIC INTERPRETATION  →  CORE MESSAGE  →  MARKETING / PR / SALES  →  NEXT ACTION";display:block;padding:1.1rem max(5vw,calc((100vw - 1440px)/2));background:var(--navy);color:#fff;border-bottom:4px solid var(--accent);font-size:.68rem;font-weight:700;letter-spacing:.12em;line-height:1.5;text-transform:uppercase;position:sticky;top:0;z-index:10}
 .outputs{position:relative;padding-top:clamp(7rem,10vw,10rem)}
-.outputs::before{content:"STRATEGY BRIEF";display:block;font-size:clamp(3.2rem,8vw,8rem);font-weight:700;line-height:.82;letter-spacing:-.065em;margin-bottom:1.25rem}
+.outputs::before{content:"STRATEGY BRIEF";display:block;font-size:clamp(3.2rem,8vw,8rem);font-weight:700;line-height:.82;letter-spacing:-.065em;margin-bottom:1.25rem;color:var(--navy)}
 .outputs::after{content:"From selected business context to a structured market approach — strategy first, communication second.";display:block;position:absolute;top:calc(clamp(7rem,10vw,10rem) + clamp(3.2rem,8vw,8rem));left:max(5vw,calc((100vw - 1440px)/2));max-width:720px;color:var(--muted);font-size:clamp(1rem,1.7vw,1.35rem);line-height:1.45}
 .outputs article:first-of-type{margin-top:5rem}
 .outputs article{transition:background-color .2s ease}
-.outputs article:hover{background:rgba(22,78,73,.045)}
-.outputs article>div:first-child .label{color:var(--petrol)}
+.outputs article:hover{background:rgba(18,57,93,.045)}
+.outputs article>div:first-child .label{color:var(--navy)}
 .outputs article h3{max-width:720px}
 .output-copy{max-width:900px}
-.source{position:relative;background:#e7e4da;padding:clamp(2rem,4vw,4rem);border-left:7px solid var(--petrol)}
-.source::before{content:"CORE STRATEGIC SOURCE";display:block;margin-bottom:1.5rem;font-size:.62rem;font-weight:700;letter-spacing:.15em;color:var(--petrol)}
+.source{position:relative;background:var(--soft);padding:clamp(2rem,4vw,4rem);border-left:7px solid var(--navy)}
+.source::before{content:"CORE STRATEGIC SOURCE";display:block;margin-bottom:1.5rem;font-size:.62rem;font-weight:700;letter-spacing:.15em;color:var(--navy)}
 .tabs{margin-top:4rem}
 .channel{border-top:1px solid var(--line);padding-top:3rem}
 .primary{transition:transform .2s ease,box-shadow .2s ease}
