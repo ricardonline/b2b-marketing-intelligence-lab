@@ -1,2 +1,2 @@
-import OpportunityLab from "@/components/opportunity-lab";import {Hero,Challenge,Strategy,Governance,Footer} from "@/components/static-sections";import {PersonalSection} from "@/components/personal-section";import {LanguageProvider} from "@/components/i18n";
-export default function Page(){return <LanguageProvider><main><Hero/><Challenge/><PersonalSection/><Strategy/><OpportunityLab/><Governance/><Footer/></main></LanguageProvider>}
+import OpportunityLab from "@/components/opportunity-lab";import {Hero,Challenge,Strategy,Governance,Footer} from "@/components/static-sections";import {LocalizedPersonalSection} from "@/components/localized-personal-section";import {LanguageProvider} from "@/components/i18n";
+export default function Page(){return <LanguageProvider><main><Hero/><Challenge/><LocalizedPersonalSection/><Strategy/><OpportunityLab/><Governance/><Footer/></main></LanguageProvider>}
