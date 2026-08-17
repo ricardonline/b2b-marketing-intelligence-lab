@@ -10,7 +10,7 @@
 .future-team-grid article>b{display:block;color:var(--navy);font-size:.82rem;letter-spacing:.06em;line-height:1.25}
 .future-team-grid article>p{font-size:.85rem;line-height:1.55;margin:1rem 0 0}
 .future-team-principle{display:block;padding:1.25rem 1.6rem;background:var(--navy);color:#fff;font-size:.72rem;letter-spacing:.1em;line-height:1.5}
-.executive-profile{padding:clamp(5rem,9vw,9rem) clamp(1.5rem,7vw,8rem);background:#fff;border-top:1px solid var(--line)}
+.executive-profile{padding:clamp(5rem,9vw,9rem) clamp(1.5rem,7vw,8rem);background:var(--paper);border-top:1px solid var(--line)}
 .executive-profile>h2{white-space:pre-line;margin:.7rem 0 1.5rem;max-width:1050px;font-size:clamp(2.6rem,5.5vw,6rem);line-height:.9;letter-spacing:-.05em;color:var(--navy)}
 .executive-intro{max-width:900px;font-size:clamp(1.05rem,1.6vw,1.35rem);line-height:1.55}
 .executive-strengths{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:3rem;border-top:3px solid var(--navy);border-bottom:3px solid var(--navy)}
