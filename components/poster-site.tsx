@@ -8,23 +8,19 @@ import {LocalizedPersonalSection} from "./localized-personal-section";
 import {buildApproach} from "@/lib/approach";
 import type {Context} from "@/types";
 
-const markets=["Germany","Central Europe","United States","North America","Global"];
-const roles=["Technical Director","Design Engineer","Purchasing Manager","Managing Director","Maintenance Manager","Distributor"];
-const goals=["Grow in an existing international market","Enter a new market","Launch a new solution","Generate qualified leads","Support sales","Strengthen market position"];
-const topics=["New machine or system","New module","New feature or function","New service","New product or component","New partner or distributor","Product update or upgrade","Retrofit or modernization","Trade fair or product launch","Reference project or customer success"];
-const base:Context={objective:"Launch a new solution",solution:"New module",market:"Germany",industry:"Mechanical Engineering",role:"Technical Director"};
+const markets=["Germany","Central Europe","North America","Global"];
+const roles=["Technical Director","Purchasing Manager","Managing Director","Distributor"];
+const goals=["Enter a new market","Launch a new solution","Generate qualified leads","Support sales","Strengthen market position"];
+const topics=["New machine or system","New service","New partner or distributor","Retrofit or modernization","Trade fair or product launch","Reference project or customer success"];
+const base:Context={objective:"Launch a new solution",solution:"New machine or system",market:"Germany",industry:"Mechanical Engineering",role:"Technical Director"};
 
 type Lang=ReturnType<typeof useLanguage>["lang"];
 
 function topicLabel(lang:Lang,v:string){
   const m:Record<string,[string,string,string,string,string]>={
     "New machine or system":["New machine / system","Neue Maschine / Anlage","Nouvelle machine / installation","Nueva máquina / sistema","新机器 / 系统"],
-    "New module":["New module","Neues Modul","Nouveau module","Nuevo módulo","新模块"],
-    "New feature or function":["New feature / function","Neues Feature / neue Funktion","Nouvelle fonctionnalité","Nueva función","新功能"],
     "New service":["New service","Neuer Service","Nouveau service","Nuevo servicio","新服务"],
-    "New product or component":["New product / component","Neues Produkt / Bauteil","Nouveau produit / composant","Nuevo producto / componente","新产品 / 部件"],
     "New partner or distributor":["New partner / distributor","Neuer Partner / Vertriebspartner","Nouveau partenaire / distributeur","Nuevo socio / distribuidor","新合作伙伴 / 经销商"],
-    "Product update or upgrade":["Product update / upgrade","Produktupdate / Upgrade","Mise à jour / évolution produit","Actualización / mejora del producto","产品更新 / 升级"],
     "Retrofit or modernization":["Retrofit / modernization","Retrofit / Modernisierung","Rétrofit / modernisation","Retrofit / modernización","改造 / 现代化"],
     "Trade fair or product launch":["Trade fair / product launch","Messe / Produktlaunch","Salon / lancement produit","Feria / lanzamiento de producto","展会 / 产品发布"],
     "Reference project or customer success":["Reference project / customer success","Referenzprojekt / Kundenerfolg","Projet de référence / réussite client","Proyecto de referencia / caso de éxito","标杆项目 / 客户成功"]
