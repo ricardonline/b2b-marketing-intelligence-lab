@@ -1,0 +1,6 @@
+/* Epilogue: bridge from the work sample into the conversation. */
+.next-step{padding:clamp(4.5rem,8vw,8rem) max(5vw,calc((100vw - 1440px)/2));background:var(--paper);border-bottom:1px solid var(--line)}
+.next-step .poster-kicker{color:var(--accent)}
+.next-step h2{margin:.8rem 0 0;max-width:1180px;color:var(--navy);font-size:clamp(2.4rem,5.5vw,6rem);line-height:.92;letter-spacing:-.055em}
+.next-step p:last-child{max-width:880px;margin:clamp(2.5rem,5vw,4.5rem) 0 0;padding-top:clamp(1.5rem,2.5vw,2.5rem);border-top:1px solid var(--line);font-size:clamp(1.05rem,1.7vw,1.4rem);line-height:1.55;color:var(--navy)}
+@media(max-width:800px){.next-step{padding-left:1.25rem;padding-right:1.25rem}.next-step h2{font-size:clamp(2.25rem,10.5vw,4rem);line-height:.98;letter-spacing:-.045em}}
