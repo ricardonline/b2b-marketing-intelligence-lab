@@ -22,5 +22,19 @@
 .recognition h3{margin:.75rem 0 1rem;font-size:clamp(1.5rem,3vw,3.1rem);line-height:1.08;letter-spacing:-.025em;color:var(--navy)}
 .recognition>p:not(.poster-kicker){max-width:760px;line-height:1.55}
 .recognition .publication{margin-top:1.25rem;font-weight:700;color:var(--navy)}
+
+/* Multilingual display type: keep the poster compact while giving accented capitals
+   (Ä/Ö/Ü, É/À/Í etc.) enough vertical room, especially on mobile. */
+html[lang="de"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:.9}
+html[lang="fr"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2),
+html[lang="es"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:.91}
+html[lang="zh-CN"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:1}
+
 @media(max-width:1050px){.future-team-grid,.executive-strengths{grid-template-columns:repeat(2,1fr)}.future-team-grid article:nth-child(2),.executive-strengths article:nth-child(2){border-right:0}.future-team-grid article:nth-child(-n+2),.executive-strengths article:nth-child(-n+2){border-bottom:1px solid var(--line)}}
-@media(max-width:800px){.future-team-grid,.executive-strengths{grid-template-columns:1fr}.future-team-grid article,.executive-strengths article{border-right:0;border-bottom:1px solid var(--line);min-height:0}.future-team-grid article:last-child,.executive-strengths article:last-child{border-bottom:0}.future-team-grid article:nth-child(2),.executive-strengths article:nth-child(2){border-bottom:1px solid var(--line)}}
+@media(max-width:800px){.future-team-grid,.executive-strengths{grid-template-columns:1fr}.future-team-grid article,.executive-strengths article{border-right:0;border-bottom:1px solid var(--line);min-height:0}.future-team-grid article:last-child,.executive-strengths article:last-child{border-bottom:0}.future-team-grid article:nth-child(2),.executive-strengths article:nth-child(2){border-bottom:1px solid var(--line)}
+html[lang="en"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:.92}
+html[lang="de"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:.98}
+html[lang="fr"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2),
+html[lang="es"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:.98}
+html[lang="zh-CN"] :is(.poster-hero h1,.poster-problem h2,.poster-lab h2,.poster-ai h2,.poster-ai h3,.poster-close h2,.future-team>h3,.executive-profile>h2){line-height:1.08}
+}
